@@ -39,7 +39,6 @@
             android:layout_below="@+id/imgProfile"
             android:layout_marginTop="0dp"
             android:orientation="vertical">
-
         </LinearLayout>
     </RelativeLayout>
 </FrameLayout>
