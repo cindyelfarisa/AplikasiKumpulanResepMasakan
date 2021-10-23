@@ -41,15 +41,12 @@ public class DataAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     }
 
     public static class ItemHolder extends RecyclerView.ViewHolder {
-
         public TextView txtJudul;
-
         public ItemHolder(View view) {
             super(view);
             txtJudul = view.findViewById(R.id.txtJudul);
         }
     }
-
 
     public static class HeaderHolder extends RecyclerView.ViewHolder {
         public HeaderHolder(View view) {
