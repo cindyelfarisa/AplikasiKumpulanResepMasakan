@@ -20,7 +20,6 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-        //Toolbar
         setupToolbar();
 
         mProgressBar = findViewById(R.id.progress_bar);
@@ -34,7 +33,7 @@ public class DetailActivity extends AppCompatActivity {
         // setting judul bar
         setTitle(dataModel.getJudul());
 
-        //tampil data konten
+        //menampilkan data konten
         webView = findViewById(R.id.webView);
         webView.loadUrl("file:///android_asset/" + dataModel.getKonten());
         webView.setWebViewClient(new WebViewClient() {
