@@ -14,7 +14,6 @@
         app:elevation="0dp">
 
         <include layout="@layout/toolbar_activity"/>
-
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.appcompat.widget.Toolbar
