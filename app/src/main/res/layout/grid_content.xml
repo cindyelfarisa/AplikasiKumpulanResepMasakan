@@ -14,4 +14,3 @@
         android:scrollbars="vertical" />
 
 </androidx.core.widget.NestedScrollView>
-
