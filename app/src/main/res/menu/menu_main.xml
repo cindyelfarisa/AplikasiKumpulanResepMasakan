@@ -8,6 +8,7 @@
         android:id="@+id/action_search"
         android:icon="@drawable/ic_search"
         android:orderInCategory="10"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
         android:title="@string/action_search"
         app:showAsAction="always" />
 
