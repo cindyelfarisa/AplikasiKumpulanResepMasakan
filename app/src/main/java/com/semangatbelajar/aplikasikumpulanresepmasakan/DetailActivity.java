@@ -30,7 +30,7 @@ public class DetailActivity extends AppCompatActivity {
         Bundle bundle = intent.getExtras();
         DataModel dataModel = (DataModel) bundle.getSerializable("dataModel");
 
-        // setting judul bar
+        //setting judul bar
         setTitle(dataModel.getJudul());
 
         //menampilkan data konten
