@@ -2,5 +2,6 @@
     <string name="app_name">Aplikasi Resep Masakan</string>
     <string name="action_search">Search</string>
     <string name="action_info">Info</string>
+    <string name="action_favorit">Favorite</string>
     <string name="action_search_mesasage"></string>
 </resources>
