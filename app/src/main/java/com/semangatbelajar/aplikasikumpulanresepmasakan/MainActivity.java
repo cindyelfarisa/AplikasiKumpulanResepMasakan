@@ -116,4 +116,9 @@ public class MainActivity extends AppCompatActivity {
         }
         win.setAttributes(winParams);
     }
+
+    public void Info(MenuItem item) {
+        Intent intent = new Intent(MainActivity.this, InfoActivity.class);
+        startActivity(intent);
+    }
 }
