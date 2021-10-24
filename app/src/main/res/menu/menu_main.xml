@@ -26,5 +26,4 @@
         android:title="@string/action_favorit"
         app:showAsAction="always" />
 
-
 </menu>
