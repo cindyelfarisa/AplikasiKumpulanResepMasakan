@@ -8,5 +8,6 @@
     <string name="text_info">Aplikasi kumpulan resep masakan</string>
     <string name="info_text">Masak Apa Hari Ini ?</string>
     <string name="title_main">Masak Apa Hari Ini ?</string>
+    <string name="add_fav">Tambah Ke Favorit</string>
 
 </resources>
