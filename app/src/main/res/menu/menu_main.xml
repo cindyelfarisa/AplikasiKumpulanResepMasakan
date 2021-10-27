@@ -12,7 +12,7 @@
         android:orderInCategory="10"
         app:actionViewClass="androidx.appcompat.widget.SearchView"
         android:title="@string/action_search"
-        app:showAsAction="always" />
+        app:showAsAction="collapseActionView|ifRoom" />
 
     <item
         android:id="@+id/action_status"

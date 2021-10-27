@@ -26,7 +26,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="170dp"
-                android:text="Masak Apa Hari Ini?"
+                android:text="@string/title_main"
                 android:textColor="@color/brown"
                 android:textSize="24sp"
                 android:textStyle="bold" />

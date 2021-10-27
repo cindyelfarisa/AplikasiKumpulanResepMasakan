@@ -6,6 +6,7 @@
     <string name="action_favorite">Favorite Recipe</string>
     <string name="action_search_mesasage"></string>
     <string name="text_info">Aplikasi kumpulan resep masakan</string>
-    <string name="info_text">Masak Apa Hari Ini?</string>
+    <string name="info_text">Masak Apa Hari Ini ?</string>
+    <string name="title_main">Masak Apa Hari Ini ?</string>
 
 </resources>
