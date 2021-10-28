@@ -11,7 +11,8 @@
         android:layout_height="wrap_content"
         android:background="@color/burlyWood"
         android:minHeight="?attr/actionBarSize"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    </androidx.appcompat.widget.Toolbar>
 
     <ProgressBar
         android:id="@+id/progress_bar"
@@ -20,20 +21,34 @@
         android:layout_height="wrap_content"
         android:indeterminate="true" />
 
-    <WebView
-        android:id="@+id/webView"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-    </WebView>
+        android:layout_height="match_parent">
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabFav"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end|bottom"
-        android:layout_margin="16dp"
-        android:contentDescription="@string/add_fav"
-        android:onClick="Favorit"
-        android:src="@drawable/ic_favorit" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabFav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|left"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="38dp"
+            android:layout_marginBottom="38dp"
+            android:clickable="true"
+            android:contentDescription="@string/add_fav"
+            android:focusable="true"
+            android:src="@drawable/ic_favorit"
+            app:fabSize="normal" />
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </WebView>
+
+    </RelativeLayout>
+
+
 
 </LinearLayout>
