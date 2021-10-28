@@ -121,4 +121,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, InfoActivity.class);
         startActivity(intent);
     }
+
+    public void Favorite(MenuItem item){
+        Intent intent = new Intent(MainActivity.this, FavoritActivity.class);
+        startActivity(intent);
+    }
 }

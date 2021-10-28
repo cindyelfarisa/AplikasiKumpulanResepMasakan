@@ -11,6 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AplikasiKumpulanResepMasakan">
+
+        <activity
+            android:name=".FavoritActivity"
+            android:exported="true" />
         <activity
             android:name=".InfoActivity"
             android:exported="true" />
