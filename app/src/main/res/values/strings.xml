@@ -9,5 +9,8 @@
     <string name="info_text">Masak Apa Hari Ini ?</string>
     <string name="title_main">Masak Apa Hari Ini ?</string>
     <string name="add_fav">Tambah Resep Favorit</string>
+    <string name="info_description">Aplikasi Masak Apa Hari Ini? merupakan aplikasi yang berisi berbagai macam resep masakan
+        yang tentunya akan menampilkan bahan-bahan dan langkah-langkah dalam membuat masakan. Aplikasi ini diharapkan dapat
+        membantu pengguna dalam menyiapkan hidangan masakannya sehari-hari.</string>
 
 </resources>
