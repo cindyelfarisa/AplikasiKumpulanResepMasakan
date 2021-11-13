@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,42 +13,75 @@
         android:minHeight="?attr/actionBarSize"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
     </androidx.appcompat.widget.Toolbar>
-
-    <ProgressBar
-        android:id="@+id/progress_bar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="match_parent"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabFav"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:indeterminate="true" />
-
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|left"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="38dp"
+        android:clickable="true"
+        android:contentDescription="@string/add_fav"
+        android:focusable="true"
+        android:src="@drawable/ic_favorit"
+        app:fabSize="normal" />
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/tbDetail">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fabFav"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_gravity="bottom|left"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="38dp"
-            android:layout_marginBottom="38dp"
-            android:clickable="true"
-            android:contentDescription="@string/add_fav"
-            android:focusable="true"
-            android:src="@drawable/ic_favorit"
-            app:fabSize="normal" />
 
-        <WebView
-            android:id="@+id/webView"
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        </WebView>
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/img_tumb"/>
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Resep ..."
+                android:id="@+id/txt_title"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bahan-bahan:"
+                android:layout_margin="10dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:id="@+id/txt_bahan"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Langkah:"
+                android:layout_margin="10dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/txt_langkah"/>
+
+        </LinearLayout>
 
     </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
 
-
-
-</LinearLayout>
+</RelativeLayout>
