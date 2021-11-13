@@ -7,57 +7,57 @@
     android:layout_height="match_parent"
     tools:context=".InfoActivity">
 
-        <com.google.android.material.appbar.AppBarLayout
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_info"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/burlyWood"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    </com.google.android.material.appbar.AppBarLayout>
 
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar_info"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="@color/burlyWood"
-                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
-        </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <RelativeLayout
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/ic_gambar" />
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginEnd="18dp"
+            android:fontFamily="monospace"
+            android:text="@string/info_text"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="30dp"
-                app:srcCompat="@drawable/ic_gambar" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="280dp"
+            android:layout_marginEnd="45dp"
+            android:fontFamily="monospace"
+            android:text="@string/info_description"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="14sp"/>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="18dp"
-                android:layout_marginTop="250dp"
-                android:layout_marginEnd="18dp"
-                android:fontFamily="monospace"
-                android:text="@string/info_text"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textSize="14sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="45dp"
-                android:layout_marginTop="280dp"
-                android:layout_marginEnd="45dp"
-                android:fontFamily="monospace"
-                android:text="@string/info_description"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textSize="14sp"/>
-
-        </RelativeLayout>
+    </RelativeLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
