@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        tools:context="com.semangatbelajar.aplikasikumpulanresepmasakan.MainActivity"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.semangatbelajar.aplikasikumpulanresepmasakan.MainActivity"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
     <item
         android:id="@+id/action_search"
@@ -12,6 +12,7 @@
         android:orderInCategory="10"
         app:actionViewClass="androidx.appcompat.widget.SearchView"
         android:title="@string/action_search"
+        android:onClick="Search"
         app:showAsAction="collapseActionView|ifRoom" />
 
     <item
