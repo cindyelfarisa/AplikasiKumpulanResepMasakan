@@ -24,14 +24,11 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <TextView
+        <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentEnd="true"
-            android:fontFamily="monospace"
-            android:text="Halaman Favorit"
-            android:textSize="14sp"
-            android:textStyle="bold" />
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_fav"
+            />
 
     </RelativeLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
