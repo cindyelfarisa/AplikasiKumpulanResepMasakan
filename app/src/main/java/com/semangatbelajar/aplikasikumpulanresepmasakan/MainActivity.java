@@ -186,13 +186,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Info(MenuItem item) {
-        Toast.makeText(MainActivity.this, "Menampilkan Info", Toast.LENGTH_LONG).show();
+        Toast.makeText(MainActivity.this, "Info", Toast.LENGTH_LONG).show();
         Intent intent = new Intent(MainActivity.this, InfoActivity.class);
         startActivity(intent);
     }
 
     public void Favorite(MenuItem item){
-        Toast.makeText(MainActivity.this, "Menampilkan Menu Favorit", Toast.LENGTH_LONG).show();
+        Toast.makeText(MainActivity.this, "Favorit", Toast.LENGTH_LONG).show();
         Intent intent = new Intent(MainActivity.this, FavoritActivity.class);
         startActivity(intent);
     }
