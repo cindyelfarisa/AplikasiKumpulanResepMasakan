@@ -33,11 +33,6 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
-    private static final int NOTIFICATION_ID = 0;
-    private static final String PRIMARY_CHANNEL_ID =
-            "primary_notification_channel";
-    private NotificationManager mNotificationManager;
-
     public RecyclerView recyclerView;
     public ArrayList<DataModel> dataModelArrayList = new ArrayList<DataModel>();
     ApiInterface mApiInterface;
@@ -48,6 +43,10 @@ public class MainActivity extends AppCompatActivity {
     private TextView btnPrev;
     private TextView btnNext;
     private List<ModelRecipes> list;
+    private static final int NOTIFICATION_ID = 0;
+    private static final String PRIMARY_CHANNEL_ID =
+            "primary_notification_channel";
+    private NotificationManager mNotificationManager;
 
 
     @Override
@@ -165,7 +164,7 @@ public class MainActivity extends AppCompatActivity {
             getWindow().setStatusBarColor(Color.TRANSPARENT);
         }
 
-        //Notification
+        //Create Notification
         mNotificationManager = (NotificationManager)
                 getSystemService(NOTIFICATION_SERVICE);
         Intent notifyIntent = new Intent(this, NotifReceiver.class);
@@ -285,7 +284,7 @@ public class MainActivity extends AppCompatActivity {
             notificationChannel.setLightColor(Color.RED);
             notificationChannel.enableVibration(true);
             notificationChannel.setDescription("Notifies every 1 day to " +
-                    "Open app");
+                    "Open your app !");
             mNotificationManager.createNotificationChannel(notificationChannel);
         }
     }
