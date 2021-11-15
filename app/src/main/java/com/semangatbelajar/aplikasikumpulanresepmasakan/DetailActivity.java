@@ -14,6 +14,7 @@ import android.webkit.WebViewClient;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -109,6 +110,7 @@ public class DetailActivity extends AppCompatActivity {
         btnFav.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(DetailActivity.this, "Add to Favorite", Toast.LENGTH_LONG).show();
                 Log.d("tesssss", title);
                 ArrayList<String> fav = new ArrayList<String>();
                 fav.add(title);
