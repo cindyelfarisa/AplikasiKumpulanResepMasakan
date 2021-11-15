@@ -12,6 +12,6 @@
     <string name="info_description">Aplikasi Masak Apa Hari Ini? merupakan aplikasi yang berisi berbagai macam resep masakan
         yang tentunya akan menampilkan bahan-bahan dan langkah-langkah dalam membuat masakan. Aplikasi ini diharapkan dapat
         membantu pengguna dalam menyiapkan hidangan masakannya sehari-hari.</string>
-    <string name="notification_title">Notifikasi Baru</string>
-    <string name="notification_text">Ada Resep Baru Untukmu !</string>
+    <string name="notification_title">Aplikasi Resep Masakan</string>
+    <string name="notification_text">Ada Berbagai Macam Resep Baru Untukmu !</string>
 </resources>
