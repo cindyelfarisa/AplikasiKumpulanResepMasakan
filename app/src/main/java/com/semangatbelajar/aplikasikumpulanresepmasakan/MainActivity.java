@@ -181,7 +181,7 @@ public class MainActivity extends AppCompatActivity {
 
         Calendar calendar =  Calendar.getInstance();
         calendar.setTimeInMillis(System.currentTimeMillis());
-        calendar.set(Calendar.HOUR_OF_DAY, 12);
+        calendar.set(Calendar.HOUR_OF_DAY, 13);
         alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, notifyPendingIntent);
         createNotificationChannel();
     }

@@ -14,9 +14,11 @@ public class NotifReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        mNotificationManager = (NotificationManager)
-                context.getSystemService(Context.NOTIFICATION_SERVICE);
-        deliverNotification(context);
+        if (intent.getAction().equals("android.intent.action.BOOT_COMPLETED")) {
+            mNotificationManager = (NotificationManager)
+                    context.getSystemService(Context.NOTIFICATION_SERVICE);
+            deliverNotification(context);
+        }
     }
 
     private void deliverNotification(Context context) {
