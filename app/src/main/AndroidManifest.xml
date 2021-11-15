@@ -32,6 +32,12 @@
       <activity
           android:name=".MainActivity"
           android:exported="true" />
+
+      <receiver
+          android:name=".NotifReceiver"
+          android:enabled="true"
+          android:exported="false">
+      </receiver>
    </application>
 
 </manifest>
