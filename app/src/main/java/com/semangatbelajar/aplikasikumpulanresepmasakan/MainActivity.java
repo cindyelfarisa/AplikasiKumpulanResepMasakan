@@ -119,33 +119,32 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-//        //membuat data yang akan ditampilkan dalam list
-//        //file .html mengambil di folder assets
-//        inputData("Ayam Bakar Bumbu Bali", "artikel_1.html");
-//        inputData("Sate Ayam Srepeh", "artikel_2.html");
-//        inputData("Pizza Sosis Jumbo (Tanpa Ulen)", "artikel_3.html");
-//        inputData("Nasgor Mawut (Mawut Sayur)", "artikel_4.html");
-//        inputData("Fuyung Hai", "artikel_5.html");
-//        inputData("Lobster Bumbu Padang", "artikel_6.html");
-//        inputData("Sop Iga Sapi", "artikel_7.html");
-//        inputData("Opor Ayam Kampung", "artikel_8.html");
-//        inputData("Bebek Goreng Sambel Ijo", "artikel_9.html");
-//        inputData("Soto Ayam Kampung", "artikel_10.html");
-//        inputData("Bakso Ayam", "artikel_11.html");
-//        inputData("Ikan Gurame Bakar", "artikel_12.html");
-//        inputData("Pisang Bakar Coklat Keju", "artikel_13.html");
-//        inputData("Keto Martabak Terang Bulan", "artikel_14.html");
-//        inputData("Ingkung Ayam Kampung", "artikel_15.html");
-//
-//        //menampilkan data ke dalam recyclerView
-//        recyclerView = findViewById(R.id.recyclerContentView);
-//        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
-//        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-//        recyclerView.setLayoutManager(layoutManager);
-//        dataAdapter = new DataAdapter(this, dataModelArrayList);
-//        recyclerView.setAdapter(dataAdapter);
+        //membuat data yang akan ditampilkan dalam list
+        //file .html mengambil di folder assets
+        //inputData("Ayam Bakar Bumbu Bali", "artikel_1.html");
+        //inputData("Sate Ayam Srepeh", "artikel_2.html");
+        //inputData("Pizza Sosis Jumbo (Tanpa Ulen)", "artikel_3.html");
+        //inputData("Nasgor Mawut (Mawut Sayur)", "artikel_4.html");
+        //inputData("Fuyung Hai", "artikel_5.html");
+        //inputData("Lobster Bumbu Padang", "artikel_6.html");
+        //inputData("Sop Iga Sapi", "artikel_7.html");
+        //inputData("Opor Ayam Kampung", "artikel_8.html");
+        //inputData("Bebek Goreng Sambel Ijo", "artikel_9.html");
+        //inputData("Soto Ayam Kampung", "artikel_10.html");
+        //inputData("Bakso Ayam", "artikel_11.html");
+        //inputData("Ikan Gurame Bakar", "artikel_12.html");
+        //inputData("Pisang Bakar Coklat Keju", "artikel_13.html");
+        //inputData("Keto Martabak Terang Bulan", "artikel_14.html");
+        //inputData("Ingkung Ayam Kampung", "artikel_15.html");
+        //menampilkan data ke dalam recyclerView
+        //recyclerView = findViewById(R.id.recyclerContentView);
+        //LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        //layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        //recyclerView.setLayoutManager(layoutManager);
+        //dataAdapter = new DataAdapter(this, dataModelArrayList);
+        //recyclerView.setAdapter(dataAdapter);
 
-        /*//menambahakan header
+        /*menambahakan header
         DataModel headerModel = new DataModel();
         headerModel.setViewType(2);
         dataModelArrayList.add(0, headerModel);*/
@@ -163,27 +162,6 @@ public class MainActivity extends AppCompatActivity {
             setWindowFlag(this, WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS, false);
             getWindow().setStatusBarColor(Color.TRANSPARENT);
         }
-
-        //Create Notification
-        mNotificationManager = (NotificationManager)
-                getSystemService(NOTIFICATION_SERVICE);
-        Intent notifyIntent = new Intent(this, NotifReceiver.class);
-        boolean alarmUp = (PendingIntent.getBroadcast(this, NOTIFICATION_ID,
-                notifyIntent, PendingIntent.FLAG_NO_CREATE) != null);
-
-        createNotificationChannel();
-
-        final PendingIntent notifyPendingIntent = PendingIntent.getBroadcast
-                (this, NOTIFICATION_ID, notifyIntent,
-                        PendingIntent.FLAG_UPDATE_CURRENT);
-        final AlarmManager alarmManager = (AlarmManager) getSystemService
-                (ALARM_SERVICE);
-
-        Calendar calendar =  Calendar.getInstance();
-        calendar.setTimeInMillis(System.currentTimeMillis());
-        calendar.set(Calendar.HOUR_OF_DAY, 13);
-        alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, notifyPendingIntent);
-        createNotificationChannel();
     }
 
     //fungsi input
@@ -269,23 +247,5 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-    }
-
-    public void createNotificationChannel() {
-        mNotificationManager =
-                (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-        if (android.os.Build.VERSION.SDK_INT >=
-                android.os.Build.VERSION_CODES.O) {
-            NotificationChannel notificationChannel = new NotificationChannel
-                    (PRIMARY_CHANNEL_ID,
-                            "Notification",
-                            NotificationManager.IMPORTANCE_HIGH);
-            notificationChannel.enableLights(true);
-            notificationChannel.setLightColor(Color.RED);
-            notificationChannel.enableVibration(true);
-            notificationChannel.setDescription("Notifies every 1 day to " +
-                    "Open your app !");
-            mNotificationManager.createNotificationChannel(notificationChannel);
-        }
     }
 }

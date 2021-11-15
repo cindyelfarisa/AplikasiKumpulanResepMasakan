@@ -3,7 +3,6 @@
     package="com.semangatbelajar.aplikasikumpulanresepmasakan">
 
    <uses-permission android:name="android.permission.INTERNET" />
-   <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
 
    <application
        android:allowBackup="true"
@@ -33,14 +32,5 @@
       <activity
           android:name=".MainActivity"
           android:exported="true"/>
-
-      <receiver
-          android:name=".NotifReceiver"
-          android:enabled="true"
-          android:exported="false">
-         <intent-filter>
-            <action android:name="android.intent.action.BOOT_COMPLETED"></action>
-         </intent-filter>
-      </receiver>
    </application>
 </manifest>
