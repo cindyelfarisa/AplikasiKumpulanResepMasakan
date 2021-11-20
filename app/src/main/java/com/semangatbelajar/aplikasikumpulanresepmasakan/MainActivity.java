@@ -90,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
             btnNext.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    Toast.makeText(MainActivity.this, "Next", Toast.LENGTH_LONG).show();
                     page += 1;
                     refresh(page.toString() );
                 }
@@ -97,6 +98,7 @@ public class MainActivity extends AppCompatActivity {
             btnPrev.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    Toast.makeText(MainActivity.this, "Previous", Toast.LENGTH_LONG).show();
                     page -= 1;
                     refresh(page.toString());
                 }
